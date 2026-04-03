@@ -11,7 +11,7 @@ export default function PricingSection() {
           title="シンプルでわかりやすい料金体系"
           subtitle="すべてのプランで30日間の無料トライアルをご利用いただけます。"
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {PRICING_PLANS.map((plan) => (
             <PricingCard key={plan.name} plan={plan} />
           ))}
