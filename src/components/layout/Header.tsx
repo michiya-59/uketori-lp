@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { NAV_ITEMS, SITE_NAME } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 
@@ -15,18 +16,33 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
-        <a href={isHome ? "#" : "/"} className="flex items-center gap-2">
-          <Image
-            src="/logo-icon.svg"
-            alt={`${SITE_NAME} ロゴ`}
-            width={32}
-            height={32}
-            priority
-          />
-          <span className="text-xl font-bold text-neutral-900">
-            {SITE_NAME}
-          </span>
-        </a>
+        {isHome ? (
+          <a href="#" className="flex items-center gap-2">
+            <Image
+              src="/logo-icon.svg"
+              alt={`${SITE_NAME} ロゴ`}
+              width={32}
+              height={32}
+              priority
+            />
+            <span className="text-xl font-bold text-neutral-900">
+              {SITE_NAME}
+            </span>
+          </a>
+        ) : (
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo-icon.svg"
+              alt={`${SITE_NAME} ロゴ`}
+              width={32}
+              height={32}
+              priority
+            />
+            <span className="text-xl font-bold text-neutral-900">
+              {SITE_NAME}
+            </span>
+          </Link>
+        )}
 
         <nav className="hidden items-center gap-8 md:flex">
           {NAV_ITEMS.map((item) => (

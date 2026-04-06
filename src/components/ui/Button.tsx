@@ -1,4 +1,5 @@
 import { type ComponentProps } from "react";
+import Link from "next/link";
 
 type Variant = "primary" | "secondary" | "ghost";
 type Size = "md" | "lg";
@@ -6,6 +7,7 @@ type Size = "md" | "lg";
 interface ButtonProps extends ComponentProps<"a"> {
   variant?: Variant;
   size?: Size;
+  href?: string;
 }
 
 const variantStyles: Record<Variant, string> = {
@@ -27,11 +29,23 @@ export default function Button({
   size = "md",
   className = "",
   children,
+  href,
   ...props
 }: ButtonProps) {
+  const baseClassName = `inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors cursor-pointer ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+
+  if (href?.startsWith("/")) {
+    return (
+      <Link href={href} className={baseClassName} {...props}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
     <a
-      className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors cursor-pointer ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      href={href}
+      className={baseClassName}
       {...props}
     >
       {children}

@@ -297,34 +297,20 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "機能一覧", href: "#ai-features" },
       { label: "料金プラン", href: "#pricing" },
       { label: "導入事例", href: "#case-studies" },
-      { label: "アップデート", href: "#" },
-    ],
-  },
-  {
-    title: "サポート",
-    links: [
-      { label: "ヘルプセンター", href: "#" },
-      { label: "導入ガイド", href: "#" },
-      { label: "API ドキュメント", href: "#" },
-      { label: "お問い合わせ", href: "#" },
     ],
   },
   {
     title: "会社情報",
     links: [
-      { label: "運営会社", href: "#" },
-      { label: "採用情報", href: "#" },
-      { label: "プレスリリース", href: "#" },
-      { label: "パートナー", href: "#" },
+      { label: "運営会社", href: "/company" },
     ],
   },
   {
     title: "法務",
     links: [
-      { label: "利用規約", href: "#" },
-      { label: "プライバシーポリシー", href: "#" },
-      { label: "特定商取引法", href: "#" },
-      { label: "セキュリティ", href: "#" },
+      { label: "利用規約", href: "/terms" },
+      { label: "プライバシーポリシー", href: "/privacy" },
+      { label: "特定商取引法に基づく表記", href: "/legal" },
     ],
   },
 ];

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FOOTER_COLUMNS, SITE_NAME } from "@/lib/constants";
 
 export default function Footer() {
@@ -23,12 +24,21 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-neutral-500 transition-colors hover:text-neutral-700"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("#") ? (
+                      <a
+                        href={link.href}
+                        className="text-sm text-neutral-500 transition-colors hover:text-neutral-700"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-neutral-500 transition-colors hover:text-neutral-700"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
