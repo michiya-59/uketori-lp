@@ -34,6 +34,14 @@ export default function CompanyPage() {
               </tr>
               <tr>
                 <th className="py-4 pr-8 text-left align-top text-sm font-medium text-neutral-500">
+                  設立
+                </th>
+                <td className="py-4 text-neutral-900">
+                  2024年12月12日
+                </td>
+              </tr>
+              <tr>
+                <th className="py-4 pr-8 text-left align-top text-sm font-medium text-neutral-500">
                   所在地
                 </th>
                 <td className="py-4 text-neutral-900">
