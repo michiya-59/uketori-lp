@@ -17,19 +17,19 @@ export default function FinalCTASection() {
           <Button
             variant="secondary"
             size="lg"
-            href="#"
+            href="/apply"
             className="bg-white text-primary-600 hover:bg-primary-50 border-transparent"
           >
-            無料で試してみる
+            無料で試す
             <ArrowRight className="h-4 w-4" />
           </Button>
           <Button
             variant="ghost"
             size="lg"
-            href="#"
+            href="/apply"
             className="text-white hover:bg-primary-700 hover:text-white"
           >
-            資料請求
+            申し込む
           </Button>
         </div>
       </div>

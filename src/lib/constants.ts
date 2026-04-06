@@ -27,8 +27,8 @@ export const HERO = {
   title: "見積から入金まで、\nすべてを一気通貫で。",
   subtitle:
     "見積作成・請求書発行・入金消込・督促まで。煩雑なバックオフィス業務をAIでまるごと効率化するクラウドサービスです。",
-  ctaPrimary: "無料で試してみる",
-  ctaSecondary: "資料請求",
+  ctaPrimary: "無料で試す",
+  ctaSecondary: "申し込む",
   badges: [
     "初期費用0円",
     "最短1分で登録",
@@ -185,7 +185,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       "メールサポート",
       "基本レポート",
     ],
-    cta: "無料で始める",
+    cta: "申し込む",
   },
   {
     name: "Starter",
@@ -201,7 +201,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       "メールサポート",
       "基本レポート",
     ],
-    cta: "無料で試してみる",
+    cta: "申し込む",
   },
   {
     name: "Standard",
@@ -218,7 +218,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       "チャットサポート",
       "詳細レポート",
     ],
-    cta: "無料で試してみる",
+    cta: "申し込む",
     popular: true,
   },
   {
@@ -238,7 +238,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       "専任サポート",
       "カスタムレポート",
     ],
-    cta: "無料で試してみる",
+    cta: "申し込む",
   },
 ];
 

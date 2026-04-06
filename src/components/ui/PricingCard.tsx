@@ -37,7 +37,7 @@ export default function PricingCard({ plan }: { plan: PricingPlan }) {
       <Button
         variant={plan.popular ? "primary" : "secondary"}
         size="lg"
-        href="#"
+        href="/apply"
         className="w-full justify-center"
       >
         {plan.cta}

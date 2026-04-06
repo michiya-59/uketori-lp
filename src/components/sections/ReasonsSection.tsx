@@ -5,16 +5,16 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const images = [
   {
-    src: "/images/reason-01.jpg",
-    alt: "ダッシュボードに表示された分析グラフ",
+    src: "/images/reason-01.png",
+    alt: "改修管理画面",
   },
   {
-    src: "/images/reason-02.jpg",
-    alt: "ノートPCに表示されたデータ分析画面",
+    src: "/images/reason-02.png",
+    alt: "明細取り込み画面",
   },
   {
-    src: "/images/reason-03.jpg",
-    alt: "オフィスで成果を喜ぶビジネスパーソン",
+    src: "/images/reason-03.png",
+    alt: "データ移行画面",
   },
 ];
 
@@ -39,12 +39,12 @@ export default function ReasonsSection() {
               >
                 {/* Photo */}
                 <div className="w-full lg:w-1/2">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+                  <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-50 p-4 shadow-lg shadow-neutral-200/50 md:p-5">
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill
-                      className="object-cover"
+                      className="object-contain p-1"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
